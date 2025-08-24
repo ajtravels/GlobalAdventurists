@@ -1,81 +1,56 @@
 :root { --max: 860px; --accent: #0b66c3; }
 
+/* Base */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.55;
-  margin: 0;
-  color: #222;
-  background: #fafbfc;
+  line-height: 1.55; margin: 0; color: #222; background: #fafbfc;
 }
-
-.wrap {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 36px 20px;
-}
+.wrap { max-width: var(--max); margin: 0 auto; padding: 36px 20px; }
 
 /* --- NAVBAR --- */
-.navbar {
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-}
-.navbar .wrap { padding: 14px 20px; }
-.navbar ul {
-  list-style: none; margin: 0; padding: 0;
-  display: flex; gap: 24px; flex-wrap: wrap;
-}
-.navbar a {
-  text-decoration: none; color: var(--accent); font-weight: 500;
-}
-.navbar a:hover { text-decoration: underline; }
+.navbar { background:#fff; border-bottom:1px solid #e5e7eb; }
+.navbar .wrap { padding:14px 20px; }
+.navbar ul { list-style:none; margin:0; padding:0; display:flex; gap:24px; flex-wrap:wrap; }
+.navbar a { text-decoration:none; color:var(--accent); font-weight:500; }
+.navbar a:hover { text-decoration:underline; }
 
 /* --- HEADINGS --- */
-h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing:.2px; }
-h2 { font-size: 1.05rem; margin: 28px 0 10px; text-transform: uppercase; letter-spacing: .06em; color:#333; }
+h1 { font-size:2rem; margin:0 0 6px; letter-spacing:.2px; }
+h2 { font-size:1.05rem; margin:28px 0 10px; text-transform:uppercase; letter-spacing:.06em; color:#333; }
 
-.sub { color:#e8eef7; margin-bottom: 6px; }      /* overridden in hero */
-.meta { font-size: .96rem; color:#444; margin: 12px 0 18px; }
+/* Remove old overlay color (was making taglines too light) */
+/* .sub { color:#e8eef7; }  <-- DELETED */
 
 /* --- CARDS / LISTS --- */
-.card { border:1px solid #e9ecf1; border-radius: 12px; padding:16px 18px; margin:14px 0; background:#fff; }
-ul { margin: 8px 0 0 20px; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+.card { border:1px solid #e9ecf1; border-radius:12px; padding:16px 18px; margin:14px 0; background:#fff; }
+ul { margin:8px 0 0 20px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
 .pill { display:inline-block; border:1px solid #e5e7eb; border-radius:999px; padding:6px 10px; margin:6px 6px 0 0; font-size:.88rem; color:#333; background:#fff; }
-.foot { margin-top: 28px; font-size: .95rem; color:#444; }
+.foot { margin-top:28px; font-size:.95rem; color:#444; }
 blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; color:#444; background:#fff; border-radius:8px; }
 
-/* --- Banner image (no overlay text) --- */
-.hero {
-  width: 100%;
-  background: #0b1220; /* fallback if image fails */
+/* --- Banner image only (no overlay text) --- */
+.hero { width:100%; background:#0b1220; }
+.hero img { width:100%; height:auto; display:block; }
+
+/* --- Centered heading block under banner --- */
+.header-text { text-align:center; margin:24px 0 12px; }
+.header-text h1 {
+  font-size:2.4rem; line-height:1.1; margin:0 0 8px; font-weight:700;
+  white-space:nowrap;           /* keep on one line on desktop */
+  overflow-wrap:normal;
 }
-.hero img {
-  width: 100%;
-  height: auto;      /* keep natural aspect ratio */
-  display: block;    /* removes tiny gaps */
+.header-text .subline { font-size:1.1rem; color:#222; margin:0 0 6px; font-weight:600; }
+.header-text .meta { font-size:1rem; color:#555; margin:0 0 16px; white-space:nowrap; }
+
+/* Contact strip (if you use a separate class) */
+.intro .contact, .header-text .contact {
+  font-size:.95rem; color:#333; margin-bottom:18px;
 }
 
-/* --- Headline block under banner --- */
-.intro h1 {
-  font-size: 2.4rem;
-  line-height: 1.1;
-  margin: 18px 0 8px;
-  font-weight: 700;
-}
-.intro .sub {
-  font-size: 1.15rem;
-  color: #444;
-  margin: 0 0 4px;
-}
-.intro .meta {
-  font-size: 1rem;
-  color: #555;
-  margin: 0 0 16px;
-  white-space: nowrap;      /* keep “Led by …” on one line */
-}
-
-/* Allow wrap on very small screens */
-@media (max-width: 520px) {
-  .intro .meta { white-space: normal; }
+/* Responsive */
+@media (max-width: 600px) {
+  .header-text h1 { font-size:1.6rem; white-space:normal; } /* allow wrap on small screens */
+  .header-text .meta { white-space:normal; }
 }
