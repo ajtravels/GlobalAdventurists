@@ -45,55 +45,37 @@ a:hover { text-decoration: underline; }
 .foot { margin-top: 28px; font-size: .95rem; color:#444; }
 blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; color:#444; background:#fff; border-radius:8px; }
 
-/* --- Hero Section --- */
+/* --- Banner image (no overlay text) --- */
 .hero {
-  position: relative;
   width: 100%;
-  height: 320px;           /* adjust height if you want */
-  overflow: hidden;
-  background: #0b1220;     /* dark fallback if image fails */
+  background: #0b1220; /* fallback if image fails */
 }
-
 .hero img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;       /* fill area without distortion */
-  filter: brightness(65%); /* darken for readability */
-  display: block;
+  height: auto;      /* keep natural aspect ratio */
+  display: block;    /* removes tiny gaps */
 }
 
-.hero-text {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;  /* stack title, sub, meta vertically */
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-}
-
-.hero-text h1 {
+/* --- Headline block under banner --- */
+.intro h1 {
   font-size: 2.4rem;
   line-height: 1.1;
-  margin: 0 0 10px;
+  margin: 18px 0 8px;
   font-weight: 700;
 }
-
-.hero-text .sub {
+.intro .sub {
   font-size: 1.15rem;
-  margin-bottom: 6px;
+  color: #444;
+  margin: 0 0 4px;
 }
-
-.hero-text .meta {
+.intro .meta {
   font-size: 1rem;
-  opacity: 0.9;
-  white-space: nowrap;     /* keep on one line unless very narrow */
+  color: #555;
+  margin: 0 0 16px;
+  white-space: nowrap;      /* keep “Led by …” on one line */
 }
 
+/* Allow wrap on very small screens */
 @media (max-width: 520px) {
-  .hero { height: 260px; }
-  .hero-text h1 { font-size: 1.8rem; }
-  .hero-text .meta { white-space: normal; }
+  .intro .meta { white-space: normal; }
 }
