@@ -35,22 +35,38 @@ blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; col
 .hero img { width:100%; height:auto; display:block; }
 
 /* --- Centered heading block under banner --- */
-.header-text { text-align:center; margin:24px 0 12px; }
+.header-text {
+  text-align: center;
+  margin: 24px 0 12px;   /* reduced bottom margin */
+}
+
 .header-text h1 {
-  font-size:2.4rem; line-height:1.1; margin:0 0 8px; font-weight:700;
-  white-space:nowrap;           /* keep on one line on desktop */
-  overflow-wrap:normal;
-}
-.header-text .subline { font-size:1.1rem; color:#222; margin:0 0 6px; font-weight:600; }
-.header-text .meta { font-size:1rem; color:#555; margin:0 0 16px; white-space:nowrap; }
-
-/* Contact strip (if you use a separate class) */
-.intro .contact, .header-text .contact {
-  font-size:.95rem; color:#333; margin-bottom:18px;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  font-weight: 700;
+  white-space: nowrap;       /* keep on one line on desktop */
 }
 
-/* Responsive */
+.header-text .subline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.header-text .contact {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;                 /* tight spacing */
+  text-align: center;
+}
+
+/* Responsive tweaks */
 @media (max-width: 600px) {
-  .header-text h1 { font-size:1.6rem; white-space:normal; } /* allow wrap on small screens */
-  .header-text .meta { white-space:normal; }
+  .header-text h1 { 
+    font-size: 1.6rem; 
+    white-space: normal;     /* allow wrap on small screens */
+  }
+  .header-text .contact { white-space: normal; }
 }
