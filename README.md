@@ -12,7 +12,7 @@ GAAJ Strategies helps organizations align product, data, and infrastructure so s
 
 ## Live Site
 This repository powers the public site:  
-➡️ [https://ajtravels.github.io/Global-adventurists-/](https://ajtravels.github.io/GlobalAdventurists/)
+➡️ [https://ajtravels.github.io/GlobalAdventurists/](https://ajtravels.github.io/GlobalAdventurists/)
 
 ---
 
