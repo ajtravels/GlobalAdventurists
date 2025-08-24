@@ -49,52 +49,51 @@ blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; col
 .hero {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 320px;           /* adjust height if you want */
   overflow: hidden;
+  background: #0b1220;     /* dark fallback if image fails */
 }
 
 .hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: brightness(65%); /* darkens image so text is readable */
+  object-fit: cover;       /* fill area without distortion */
+  filter: brightness(65%); /* darken for readability */
+  display: block;
 }
 
 .hero-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  display: flex;
+  flex-direction: column;  /* stack title, sub, meta vertically */
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
   text-align: center;
-  color: white;
-  max-width: 90%;
-}
-
- .hero-text .meta {
-  white-space: nowrap;
+  color: #fff;
+  padding: 0 20px;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  margin: 0 0 12px;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin: 0 0 10px;
   font-weight: 700;
 }
 
 .hero-text .sub {
-  font-size: 1.25rem;
-  margin-bottom: 8px;
-  font-weight: 400;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
 }
 
 .hero-text .meta {
   font-size: 1rem;
-  font-style: italic;
   opacity: 0.9;
+  white-space: nowrap;     /* keep on one line unless very narrow */
 }
 
-
-/* --- Responsive tweaks --- */
 @media (max-width: 520px) {
-  .hero img { height: 260px; }
-  .hero-text h1 { font-size: 1.7rem; }
+  .hero { height: 260px; }
+  .hero-text h1 { font-size: 1.8rem; }
+  .hero-text .meta { white-space: normal; }
 }
