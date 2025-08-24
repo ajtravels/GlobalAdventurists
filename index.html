@@ -4,84 +4,138 @@
   <meta charset="utf-8">
   <title>GAAJ Strategies — Systems & Product Advisory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    :root { --max: 860px; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; margin:0; color:#222; background:#fafbfc; }
-    .wrap { max-width: var(--max); margin: 0 auto; padding: 36px 20px; }
-    h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing:.2px; }
-    h2 { font-size: 1.05rem; margin: 28px 0 10px; text-transform: uppercase; letter-spacing: .06em; color:#333; }
-    .sub { color:#555; margin-bottom: 16px; }
-    .meta { font-size: .96rem; color:#444; margin-bottom: 18px; }
-    .card { border:1px solid #e9ecf1; border-radius: 12px; padding:16px 18px; margin:14px 0; background:#fff; }
-    ul { margin: 8px 0 0 20px; }
-    a { color:#0b66c3; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .pill { display:inline-block; border:1px solid #e5e7eb; border-radius:999px; padding:6px 10px; margin:6px 6px 0 0; font-size:.88rem; color:#333; background:#fff; }
-    .foot { margin-top: 28px; font-size: .95rem; color:#444; }
-    .note { font-size:.92rem; color:#555; margin-top:6px; }
-    blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; color:#444; background:#fff; border-radius:8px; }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
+  <style> html { scroll-behavior: smooth; } </style>
 </head>
 <body>
-  <main class="wrap">
-    <h1>GAAJ Strategies</h1> 
-    <h1>Global Adventurists by Anna Jacobi Strategies</h1>
-    <div class="sub">Systems & Product Advisory for real-world scale</div>
-    <div class="meta">San Francisco, CA · <a href="mailto:ajacobi@gmail.com">ajacobi@gmail.com</a> · <a href="tel:+14155470459">+1 415-547-0459</a> · <a href="https://www.linkedin.com/in/ajacobi">linkedin.com/in/ajacobi</a></div>
-
-    <h2>About</h2>
-    <p>We align product, data, and infrastructure so systems hold under pressure. Led by Anna Jacobi (Infrastructure Architect · Product Strategist · Fractional CPO), we translate legacy complexity into AI-ready, customer-aligned platforms—boardroom to war room, end to end.</p>
-
-    <h2>Micro-Offers (fixed price, fast turn)</h2>
-    <div class="card">
-      <strong>Product Feasibility Sprint — $2,500 (50% upfront, 1 week)</strong>
+  <!-- NAV -->
+  <nav class="navbar" role="navigation" aria-label="Main">
+    <div class="wrap">
       <ul>
-        <li>Leadership interviews + artifact review (OKRs, KPIs, tech stack)</li>
-        <li>Top 3 risks, top 3 opportunities, and alignment recommendations</li>
-        <li>2-page brief ready for execs/investors</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <div class="card">
-      <strong>PMF Checkup — $2,000 (upfront)</strong>
-      <ul>
-        <li>Signal vs. noise; fit vs. capability; what to ship next</li>
-        <li>One-page action plan with 3 metrics to track</li>
-      </ul>
-    </div>
-    <div class="card">
-      <strong>Infra Reality Audit — $2,500 (50% upfront)</strong>
-      <ul>
-        <li>Review of stack, observability/repair logic, and data contracts</li>
-        <li>“What breaks at scale” memo + immediate quick wins</li>
-      </ul>
-    </div>
-    <blockquote>We don’t do unpaid tests. Clear scope, clear deliverables, fast turnaround.</blockquote>
+  </nav>
 
-    <h2>Selected Impact</h2>
-    <ul>
-      <li><strong>Meta (Facebook)</strong> — AI-augmented repair orchestration; <strong>$1.2B</strong> ops cost reduction; follow-the-sun reliability.</li>
-      <li><strong>MediaMath</strong> — AI-assisted bid shading under <strong>sub-10ms</strong>; GDPR-compliant data workflows.</li>
-      <li><strong>Floww.io</strong> — Pivoted to pay-to-play; stabilized architecture; automated GTM funnels.</li>
-      <li><strong>Q.ant</strong> — 4 validated POCs; first product function; Gartner Hype Cycle mentions.</li>
-    </ul>
+  <!-- HERO (optional image at assets/hero.jpg) -->
+  <header class="hero" role="banner">
+    <img src="assets/hero.jpg" alt="Architecting under pressure — systems, AI, and product strategy">
+    <div class="hero-text wrap">
+      <h1>GAAJ Strategies</h1>
+      <div class="sub">Systems & Product Advisory for real-world scale</div>
+      <div class="meta"><em>G-A-A-J = Global Adventurists by Anna Jacobi</em></div>
+    </div>
+  </header>
 
-    <h2>Focus Areas</h2>
+  <main class="wrap" role="main">
+    <!-- CONTACT STRIP -->
     <p class="meta">
-      <span class="pill">Platform Modernization</span>
-      <span class="pill">Schema Governance</span>
-      <span class="pill">Streaming & ETL</span>
-      <span class="pill">Observability & Repair</span>
-      <span class="pill">Data Contracts</span>
-      <span class="pill">Monetization</span>
-      <span class="pill">Executive Communication</span>
+      San Francisco, CA ·
+      <a href="mailto:globaladventurists@proton.me">globaladventurists@proton.me</a> ·
+      <a href="mailto:ajacobi@gmail.com">ajacobi@gmail.com</a> ·
+      <a href="tel:+14155470459">+1&nbsp;415-547-0459</a> ·
+      <a href="https://www.linkedin.com/in/ajacobi">linkedin.com/in/ajacobi</a>
     </p>
 
-    <h2>Origin</h2>
-    <p class="note"><strong>GAAJ</strong> encodes <em>Global Adventurists · Anna Jacobi</em>—building against the norm, with systems that stand up in the real world.</p>
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p><strong>Product and strategy leader across AI infrastructure, data platforms, and automation—turning complexity into clean execution.</strong> I’ve built industry-first systems at Meta, AMD, Lockheed, and European deep-tech startups, spanning embedded hardware, real-time orchestration, ad platforms, and LLM-integrated workflows.</p>
+      <p>I thrive in high-ambiguity environments where architecture, data, and delivery must move in lockstep. My work includes GDPR-safe modeling, federated schema evolution, agent orchestration, and platform modernization—designing infrastructure that is observable, explainable, and built to adapt.</p>
+      <p><strong>Current focus:</strong> federated agent architectures, goal auctions, and sustainable data trust frameworks—linking my systems background with emerging models for traceable, decentralized intelligence.</p>
+      <p>I blend technical depth with systems ethics and ecological thinking. Good infrastructure should work like a watershed: resilient, transparent, and sustainable by design. Whether aligning GTM with backend reality, rebuilding AI strategy, or sunsetting misfit products, I bring structure without waste and precision without performance theater.</p>
+      <p><em>If you’re hiring for platform strategy, AI infrastructure, or founder-stage product leadership, I’m exploring new roles.</em></p>
+    </section>
 
-    <h2>Contact</h2>
-    <p class="foot">Email: <a href="mailto:ajacobi@gmail.com">ajacobi@gmail.com</a> · Phone: <a href="tel:+14155470459">+1 415-547-0459</a> · LinkedIn: <a href="https://www.linkedin.com/in/ajacobi">linkedin.com/in/ajacobi</a></p>
+    <!-- OFFERS -->
+    <section id="offers" aria-labelledby="offers-heading">
+      <h2 id="offers-heading">Micro-Offers (fixed price, fast turn)</h2>
+
+      <div class="card">
+        <strong>Product Feasibility Sprint — $2,500 (50% upfront, 1 week)</strong>
+        <ul>
+          <li>Leadership interviews + artifact review (OKRs, KPIs, tech stack)</li>
+          <li>Top 3 risks, top 3 opportunities, and alignment recommendations</li>
+          <li>2-page brief ready for execs/investors</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <strong>PMF Checkup — $2,000 (upfront)</strong>
+        <ul>
+          <li>Signal vs. noise; fit vs. capability; what to ship next</li>
+          <li>One-page action plan with 3 metrics to track</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <strong>Infra Reality Audit — $2,500 (50% upfront)</strong>
+        <ul>
+          <li>Review of stack, observability/repair logic, and data contracts</li>
+          <li>“What breaks at scale” memo + immediate quick wins</li>
+        </ul>
+      </div>
+
+      <blockquote>We don’t do unpaid tests. Clear scope, clear deliverables, fast turnaround.</blockquote>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" aria-labelledby="impact-heading">
+      <h2 id="impact-heading">Selected Impact</h2>
+      <ul>
+        <li><strong>Meta (Facebook)</strong> — AI-augmented repair orchestration; <strong>$1.2B</strong> ops cost reduction; follow-the-sun reliability.</li>
+        <li><strong>MediaMath</strong> — AI-assisted bid shading under <strong>sub-10ms</strong>; GDPR-compliant data workflows.</li>
+        <li><strong>Floww.io</strong> — Pivoted to pay-to-play; stabilized architecture; automated GTM funnels.</li>
+        <li><strong>Q.ant</strong> — 4 validated POCs; first product function; Gartner Hype Cycle mentions.</li>
+      </ul>
+
+      <p class="meta">
+        <span class="pill">Platform Modernization</span>
+        <span class="pill">Schema Governance</span>
+        <span class="pill">Streaming &amp; ETL</span>
+        <span class="pill">Observability &amp; Repair</span>
+        <span class="pill">Data Contracts</span>
+        <span class="pill">Monetization</span>
+        <span class="pill">Executive Communication</span>
+      </p>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Resources</h2>
+      <ul>
+        <li>
+          <strong>Strategic Product Leadership: Translating Complexity into Customer Value</strong> —
+          <a href="https://docs.google.com/presentation/d/1bGjoj-xjiWAIc5E0GcmDpiZrFikv1CtHz1wx_7UZi84/edit?usp=sharing" target="_blank" rel="noopener">View deck</a>
+        </li>
+        <li>
+          <strong>Water Footprint (Sustainable AI)</strong> —
+          <a href="https://docs.google.com/presentation/d/1TlLT_gyxqTQtc8LL-cAb3mPwFA8rZlZcJcY9JT5kgHM/edit?usp=sharing" target="_blank" rel="noopener">View deck</a>
+        </li>
+        <li>
+          <strong>Designing a Federated Exchange Layer for AI</strong> —
+          <a href="https://docs.google.com/presentation/d/1cH2AHUFMthfWZG0lKlaWgsdukYRcmUKhdJGEUfnS_C4/edit?usp=sharing" target="_blank" rel="noopener">View deck</a>
+        </li>
+      </ul>
+      <!-- If you later host PDFs in this repo, drop them in /assets/decks/ and link like:
+      <a href="assets/decks/product-feasibility.pdf">Download PDF</a>
+      -->
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p class="foot">
+        Email: <a href="mailto:globaladventurists@proton.me">globaladventurists@proton.me</a> ·
+        <a href="mailto:ajacobi@gmail.com">ajacobi@gmail.com</a><br>
+        Phone: <a href="tel:+14155470459">+1&nbsp;415-547-0459</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/ajacobi">linkedin.com/in/ajacobi</a>
+      </p>
+    </section>
   </main>
 </body>
 </html>
-
