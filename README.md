@@ -23,6 +23,6 @@ This repository powers the public site:
 ---
 
 ## Contact
-- 📧 **ajacobi@gmail.com**  
+- 📧 **amjacobi@gmail.com**  
 - 📞 **+1 415-547-0459**  
 - 🔗 [linkedin.com/in/ajacobi](https://www.linkedin.com/in/ajacobi)
