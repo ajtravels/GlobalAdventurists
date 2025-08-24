@@ -1,0 +1,59 @@
+:root { --max: 860px; --accent: #0b66c3; }
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  margin: 0;
+  color: #222;
+  background: #fafbfc;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 36px 20px;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* --- HEADINGS --- */
+h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing:.2px; }
+h2 { font-size: 1.05rem; margin: 28px 0 10px; text-transform: uppercase; letter-spacing: .06em; color:#333; }
+
+.sub { color:#555; margin-bottom: 16px; }
+.meta { font-size: .96rem; color:#444; margin-bottom: 18px; }
+
+/* --- CARDS --- */
+.card { border:1px solid #e9ecf1; border-radius: 12px; padding:16px 18px; margin:14px 0; background:#fff; }
+ul { margin: 8px 0 0 20px; }
+
+/* --- MISC --- */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.pill { display:inline-block; border:1px solid #e5e7eb; border-radius:999px; padding:6px 10px; margin:6px 6px 0 0; font-size:.88rem; color:#333; background:#fff; }
+.foot { margin-top: 28px; font-size: .95rem; color:#444; }
+.note { font-size:.92rem; color:#555; margin-top:6px; }
+blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; color:#444; background:#fff; border-radius:8px; }
