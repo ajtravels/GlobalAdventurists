@@ -1,8 +1,7 @@
-# GAAJ Strategies
+# Global Adventurists Strategies by Anna Jacobi
 
 **Systems & Product Advisory for real-world scale**  
-_G-A-A-J = Global Adventurists by Anna Jacobi_
-
+ 
 ---
 
 ## About
