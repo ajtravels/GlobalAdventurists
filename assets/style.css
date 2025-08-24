@@ -34,39 +34,34 @@ blockquote { border-left:3px solid #e5e7eb; margin:12px 0; padding:8px 14px; col
 .hero { width:100%; background:#0b1220; }
 .hero img { width:100%; height:auto; display:block; }
 
-/* --- Centered heading block under banner --- */
-.header-text {
-  text-align: center;
-  margin: 24px 0 12px;   /* reduced bottom margin */
+/* --- Heading block under banner, left aligned with content --- */
+.header-block {
+  margin: 24px auto 16px;
 }
 
-.header-text h1 {
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin-bottom: 6px;
+.header-block h1 {
+  font-size: 2rem;
   font-weight: 700;
-  white-space: nowrap;       /* keep on one line on desktop */
+  margin: 0 0 6px;
 }
 
-.header-text .subline {
-  font-size: 1.1rem;
+.header-block .subline {
+  font-size: 1.05rem;
   font-weight: 500;
   color: #444;
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 }
 
-.header-text .contact {
+.header-block .contact {
   font-size: 0.95rem;
-  color: #333;
-  margin: 0;                 /* tight spacing */
-  text-align: center;
+  color: #444;
+  margin: 0 0 12px;
+  line-height: 1.4;
 }
 
-/* Responsive tweaks */
+/* Responsive: allow wrapping on small screens */
 @media (max-width: 600px) {
-  .header-text h1 { 
-    font-size: 1.6rem; 
-    white-space: normal;     /* allow wrap on small screens */
-  }
-  .header-text .contact { white-space: normal; }
+  .header-block h1 { font-size: 1.6rem; }
+  .header-block .contact { white-space: normal; }
 }
+
